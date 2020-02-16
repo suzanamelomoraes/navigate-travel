@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Dates from "./components/dates";
 
 class App extends Component {
   state = {
@@ -18,7 +19,7 @@ class App extends Component {
   }
 
   render() {
-    return <div>{this.state.dates.map(date => date.date)}</div>;
+    return <Dates dates={this.state.dates} />;
   }
 }
 
