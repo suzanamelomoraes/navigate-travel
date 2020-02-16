@@ -10,7 +10,9 @@ const Dates = ({ dates }) => {
           <h6>{date.dateText}</h6>
           <h6>{date.dateDay}</h6>
           <p>{date.temperature}</p>
+          <div style={{ border: "solid 1px"}}>
           <Producs products={date.products} />
+          </div>
         </div>
       ))}
     </div>
