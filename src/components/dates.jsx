@@ -1,4 +1,5 @@
 import React from "react";
+import Producs from "./products";
 
 const Dates = ({ dates }) => {
   return (
@@ -9,6 +10,7 @@ const Dates = ({ dates }) => {
           <h6>{date.dateText}</h6>
           <h6>{date.dateDay}</h6>
           <p>{date.temperature}</p>
+          <Producs products={date.products} />
         </div>
       ))}
     </div>
