@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Dates from "./components/dates";
-import styled from "styled-components"
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+`;
 
 class App extends Component {
   state = {
@@ -20,7 +24,11 @@ class App extends Component {
   }
 
   render() {
-    return <Dates dates={this.state.dates} />;
+    return (
+      <Container>
+        <Dates dates={this.state.dates} />
+      </Container>
+    );
   }
 }
 
