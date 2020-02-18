@@ -6,6 +6,11 @@ const Container = styled.div`
   display: flex;
 `;
 
+const Wrapper = styled.div`
+display: flex;
+flex-flow: row nowrap;
+`;
+
 class App extends Component {
   state = {
     dates: []
@@ -25,9 +30,11 @@ class App extends Component {
 
   render() {
     return (
+      <Wrapper>
       <Container>
         <Dates dates={this.state.dates} />
       </Container>
+      </Wrapper>
     );
   }
 }
