@@ -1,9 +1,12 @@
 import React from "react";
 import Producs from "./products";
 
+
+
+
 const Dates = ({ dates }) => {
   return (
-    <div>
+    <div className="container">
       {dates.map(date => (
         <div>
           <h5>{date.date}</h5>
