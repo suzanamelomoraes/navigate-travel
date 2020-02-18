@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Dates from "./components/dates";
+import styled from "styled-components"
 
 class App extends Component {
   state = {
