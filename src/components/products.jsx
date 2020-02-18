@@ -7,14 +7,19 @@ const Container = styled.div`
   border-radius: 5px;
 `;
 
+const P1 = styled.p`
+color: red;
+font-size: 20px;
+`;
+
 const Products = ({ products }) => {
   return (
     <div>
       {products.map(product => (
         <Container>
-          <p>{product.status}</p>
+          <P1>{product.priceWithDiscount}</P1>
           <p style={{ textDecoration: "line-through" }}>{product.price}</p>
-          <p>{product.priceWithDiscount}</p>
+          <p>{product.status}</p>
         </Container>
       ))}
     </div>
