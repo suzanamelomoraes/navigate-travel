@@ -6,9 +6,14 @@ const Container = styled.div`
   display: flex;
 `;
 
+const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Wrapper = styled.div`
-display: flex;
-flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 `;
 
 class App extends Component {
@@ -31,9 +36,15 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-      <Container>
-        <Dates dates={this.state.dates} />
-      </Container>
+        <Title>
+          <h1>Our Prices</h1>
+          <h2>Premier</h2>
+          <h2>Premier Plus</h2>
+          <h2>Catamaran</h2>
+        </Title>
+        <Container>
+          <Dates dates={this.state.dates} />
+        </Container>
       </Wrapper>
     );
   }
