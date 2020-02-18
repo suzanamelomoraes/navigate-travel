@@ -8,8 +8,12 @@ const Container = styled.div`
 `;
 
 const P1 = styled.p`
-color: red;
-font-size: 20px;
+  color: red;
+  font-size: 20px;
+`;
+
+const P2 = styled.p`
+  text-decoration: line-through;
 `;
 
 const Products = ({ products }) => {
@@ -18,7 +22,7 @@ const Products = ({ products }) => {
       {products.map(product => (
         <Container>
           <P1>{product.priceWithDiscount}</P1>
-          <p style={{ textDecoration: "line-through" }}>{product.price}</p>
+          <P2>{product.price}</P2>
           <p>{product.status}</p>
         </Container>
       ))}
