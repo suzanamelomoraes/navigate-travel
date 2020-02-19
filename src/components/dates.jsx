@@ -20,9 +20,8 @@ const Dates = ({ dates }) => {
     <Container>
       {dates.map(date => (
         <div key={Math.floor((Math.random() * 10000) + 1)}>
-          <h5>{date.date}</h5>
-          <h6>{date.dateText}</h6>
-          <h6>({date.dateDay})</h6>
+          <h4>{date.dateText}</h4>
+          <h5>({date.dateDay})</h5>
           <P>{date.temperature}</P>
 
           <Products products={date.products} />

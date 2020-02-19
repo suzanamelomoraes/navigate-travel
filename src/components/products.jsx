@@ -7,6 +7,7 @@ const Container = styled.div`
   border-radius: 5px;
   padding: 2px;
   margin: 2px;
+  margin-top: 5px;
 `;
 
 const P1 = styled.p`
