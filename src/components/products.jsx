@@ -45,7 +45,7 @@ const Products = ({ products }) => {
             ) : product.status === "Sold Out" ? (
               <p style={{ color: "#F21C00" }}>{product.status}</p>
             ) : (
-              <p>{product.status}</p>
+              <p style={{ color: "#050019" }}>{product.status}</p>
             )}
           </Container>
         </div>
