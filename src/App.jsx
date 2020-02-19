@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Dates from "./components/dates";
 import styled from "styled-components";
+import Dates from "./components/dates";
+
 
 const Container = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ const Title = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
+  font-family: 'Roboto', sans-serif;
 `;
 
 class App extends Component {
