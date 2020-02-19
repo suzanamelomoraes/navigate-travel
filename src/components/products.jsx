@@ -13,6 +13,7 @@ const Container = styled.div`
 
 const P1 = styled.p`
   color: red;
+  font-family: "Anton", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 20px;
 `;
 
@@ -21,20 +22,27 @@ const P2 = styled.p`
 `;
 
 const Wrapper = styled.div`
-display: flex;
-flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 `;
 
 const Products = ({ products }) => {
   return (
     <Wrapper>
       {products.map(product => (
-        <div key={Math.floor((Math.random() * 10000) + 1)}>
-        <Container>
-          <P1>{product.priceWithDiscount}</P1>
-          <P2>{product.price}</P2>
-          <p>{product.status}</p>
-        </Container>
+        <div key={Math.floor(Math.random() * 10000 + 1)}>
+          <Container>
+            {product.priceWithDiscount ? (
+              <div>
+                {" "}
+                <P2>{product.price}</P2> <P1>{product.priceWithDiscount}</P1>{" "}
+              </div>
+            ) : (
+              <P1>{product.price}</P1>
+            )}
+
+            <p>{product.status}</p>
+          </Container>
         </div>
       ))}
     </Wrapper>
