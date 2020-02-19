@@ -17,13 +17,6 @@ const T2 = styled.h1`
   font-style: oblique;
 `;
 
-const T3 = styled.h2``;
-
-const T4 = styled.h2``;
-
-const T5 = styled.h2``;
-
-
 const Titles = () => {
   return (
     <Title>
@@ -31,9 +24,9 @@ const Titles = () => {
         <T1>Our</T1>
         <T2>Prices</T2>
       </div>
-      <T3>Premier</T3>
-      <T4>Premier Plus</T4>
-      <T5>Catamaran</T5>
+      <h2>Premier</h2>
+      <h2>Premier Plus</h2>
+      <h2>Catamaran</h2>
     </Title>
   );
 };
