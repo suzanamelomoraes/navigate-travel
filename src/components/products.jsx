@@ -8,6 +8,7 @@ const Container = styled.div`
   padding: 2px;
   margin: 2px;
   margin-top: 5px;
+  height: 150px;
 `;
 
 const P1 = styled.p`
