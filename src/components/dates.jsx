@@ -19,7 +19,7 @@ const Dates = ({ dates }) => {
   return (
     <Container>
       {dates.map(date => (
-        <div>
+        <div key={Math.floor((Math.random() * 10000) + 1)}>
           <h5>{date.date}</h5>
           <h6>{date.dateText}</h6>
           <h6>({date.dateDay})</h6>
