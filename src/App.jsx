@@ -9,6 +9,7 @@ const Container = styled.div`
 const Title = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 `;
 
 const Wrapper = styled.div`
