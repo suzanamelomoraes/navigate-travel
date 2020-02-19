@@ -17,6 +17,19 @@ const T1 = styled.h1`
 
 const Boats = styled.img`
   width: 200px;
+  border-radius: 5px;
+`;
+
+const Container = styled.div`
+  position: relative;
+  text-align: center;
+  color: white;
+`;
+
+const BoatName = styled.h2`
+  position: absolute;
+  bottom: -15px;
+  left: 5px;
 `;
 
 const Titles = () => {
@@ -26,10 +39,20 @@ const Titles = () => {
         <T1>Our</T1>
         <T1>Prices</T1>
       </div>
+      <Container>
+        <Boats src={PremierSrc} />
+        <BoatName>Premier</BoatName>
+      </Container>
 
-      <Boats src={PremierSrc} />
-      <Boats src={PremierPlusSrc} />
-      <Boats src={CatamaranSrc} />
+      <Container>
+        <Boats src={PremierPlusSrc} />
+        <BoatName>Premier Plus</BoatName>
+      </Container>
+
+      <Container>
+        <Boats src={CatamaranSrc} />
+        <BoatName>Catamaran</BoatName>
+      </Container>
     </Title>
   );
 };
