@@ -1,22 +1,16 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Dates from "./components/dates";
-
+import Titles from "./components/titles";
 
 const Container = styled.div`
   display: flex;
 `;
 
-const Title = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-`;
-
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 `;
 
 class App extends Component {
@@ -39,12 +33,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>
-          <h1>Our Prices</h1>
-          <h2>Premier</h2>
-          <h2>Premier Plus</h2>
-          <h2>Catamaran</h2>
-        </Title>
+        <Titles />
         <Container>
           <Dates dates={this.state.dates} />
         </Container>
