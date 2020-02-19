@@ -10,7 +10,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
 `;
 
 class App extends Component {

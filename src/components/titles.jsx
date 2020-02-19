@@ -13,7 +13,7 @@ const Title = styled.div`
 const T1 = styled.h1`
   color: red;
   font-style: oblique;
-  font-family: "Anton", sans-serif;
+  font-family: "Anton", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 2.5em;
   margin: 0;
 `;
