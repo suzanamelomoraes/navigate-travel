@@ -30,7 +30,7 @@ const Products = ({ products }) => {
   return (
     <Wrapper>
       {products.map(product => (
-        <div key={Math.floor(Math.random() * 10000 + 1)}>
+        <div key={product.class}>
           <Container>
             {product.priceWithDiscount ? (
               <div>

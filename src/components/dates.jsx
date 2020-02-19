@@ -18,8 +18,8 @@ const P = styled.p`
 const Dates = ({ dates }) => {
   return (
     <Container>
-      {dates.map(date => (
-        <div key={Math.floor((Math.random() * 10000) + 1)}>
+      {dates.map((date, i) => (
+        <div key={`${date.date} - ${i}`}>
           <h4>{date.dateText}</h4>
           <h5>({date.dateDay})</h5>
           <P>{date.temperature}</P>
