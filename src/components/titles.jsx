@@ -21,6 +21,9 @@ const T1 = styled.h1`
 const Boats = styled.img`
   width: 200px;
   border-radius: 5px;
+  :hover{
+    opacity: 0.8;
+  }
 `;
 
 const Container = styled.div`
@@ -33,6 +36,7 @@ const BoatName = styled.h2`
   position: absolute;
   bottom: -15px;
   left: 5px;
+  text-shadow: 0 0.1em 0.1em black;
 `;
 
 const Titles = () => {
