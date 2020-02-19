@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import PremierSrc from "../images/premier.jpg";
+import PremierPlusSrc from "../images/premierplus.jpg";
+import CatamaranSrc from "../images/catamaran.jpg";
 
 const Title = styled.div`
   display: flex;
@@ -12,9 +15,8 @@ const T1 = styled.h1`
   font-style: oblique;
 `;
 
-const T2 = styled.h1`
-  color: red;
-  font-style: oblique;
+const Boats = styled.img`
+  width: 200px;
 `;
 
 const Titles = () => {
@@ -22,11 +24,12 @@ const Titles = () => {
     <Title>
       <div>
         <T1>Our</T1>
-        <T2>Prices</T2>
+        <T1>Prices</T1>
       </div>
-      <h2>Premier</h2>
-      <h2>Premier Plus</h2>
-      <h2>Catamaran</h2>
+
+      <Boats src={PremierSrc} />
+      <Boats src={PremierPlusSrc} />
+      <Boats src={CatamaranSrc} />
     </Title>
   );
 };
