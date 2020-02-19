@@ -5,6 +5,8 @@ const Container = styled.div`
   border: solid 1px;
   border-color: darkgray;
   border-radius: 5px;
+  padding: 5px;
+  margin: 2px
 `;
 
 const P1 = styled.p`
